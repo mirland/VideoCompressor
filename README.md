@@ -14,7 +14,6 @@ A High-performance video compressor for Android using Hardware decoding and enco
 ```
 
 
-import numan.dev.videocompressor.VideoCompressTask;
 import numan.dev.videocompressor.VideoCompressor;
 
   /**
