@@ -3,19 +3,16 @@ package numan.dev.videocompress;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.database.Cursor;
-import android.net.Uri;
 import android.os.Build;
-import android.os.Environment;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import numan.dev.videocompressor.VideoCompressor;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.File;
 import java.net.URISyntaxException;
@@ -149,12 +146,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @SuppressWarnings("deprecation")
-    public static Locale getSystemLocaleLegacy(Configuration config){
+    public static Locale getSystemLocaleLegacy(Configuration config) {
         return config.locale;
     }
 
     @TargetApi(Build.VERSION_CODES.N)
-    public static Locale getSystemLocale(Configuration config){
+    public static Locale getSystemLocale(Configuration config) {
         return config.getLocales().get(0);
     }
 }
