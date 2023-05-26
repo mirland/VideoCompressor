@@ -1,15 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
+    compileSdk 33
     defaultConfig {
         applicationId "numan.dev.videocompress"
         minSdkVersion 19
-        targetSdkVersion 22
+        targetSdk 33
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
